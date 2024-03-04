@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://onqf5hkq8a12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpvst"]
+size = Vector2(311.109, 55)
+
+[node name="Spikes" type="Node2D"]
+scale = Vector2(0.045, 1)
+
+[node name="Spike" type="Node2D" parent="."]
+position = Vector2(-3377.78, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Spike"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike/StaticBody2D"]
+shape = SubResource("RectangleShape2D_gpvst")
+
+[node name="Panel" type="Panel" parent="Spike/StaticBody2D"]
+offset_left = -177.777
+offset_top = -28.0
+offset_right = 189.223
+offset_bottom = 54.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Spike3" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Spike3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike3/StaticBody2D"]
+shape = SubResource("RectangleShape2D_gpvst")
+
+[node name="Panel" type="Panel" parent="Spike3/StaticBody2D"]
+offset_left = -177.777
+offset_top = -28.0
+offset_right = 189.223
+offset_bottom = 54.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Spike4" type="Node2D" parent="."]
+position = Vector2(3377.78, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Spike4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spike4/StaticBody2D"]
+shape = SubResource("RectangleShape2D_gpvst")
+
+[node name="Panel" type="Panel" parent="Spike4/StaticBody2D"]
+offset_left = -177.777
+offset_top = -28.0
+offset_right = 189.223
+offset_bottom = 54.0
+metadata/_edit_use_anchors_ = true
